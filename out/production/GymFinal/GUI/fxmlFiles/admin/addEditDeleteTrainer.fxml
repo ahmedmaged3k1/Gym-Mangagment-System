@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #bfbfbf;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controllers.admin.trainerController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="57.0" layoutY="90.0" prefHeight="373.0" prefWidth="805.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" percentWidth="0.0" prefWidth="200.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" percentWidth="0.0" prefWidth="200.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" percentWidth="0.0" prefWidth="200.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" percentWidth="0.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="27.0" prefWidth="303.0" text="Trainer Name" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label prefHeight="27.0" prefWidth="235.0" text="Trainer ID" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label alignment="TOP_LEFT" prefHeight="27.0" prefWidth="219.0" text="Trainer E-mail" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="txtf_f3_emp_editTrainer_tName" prefHeight="40.0" prefWidth="200.0" promptText="Name" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP" />
+            <TextField fx:id="txtf_f3_emp_editTrainer_tID" prefHeight="40.0" prefWidth="200.0" promptText="ID" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <TextField fx:id="txtf_f3_emp_editTrainer_tEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" promptText="Email" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+            <Label prefHeight="27.0" prefWidth="217.0" text="Trainer Phone" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtf_f3_emp_editTrainer_tPhone" prefHeight="40.0" prefWidth="200.0" promptText="Phone number" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+            <Button fx:id="btn_f3_admin_editTrainer_confirm" defaultButton="true" mnemonicParsing="false" onAction="#btn_confirm_pressed" prefHeight="40.0" prefWidth="162.0" text="Confirm " GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_f3_admin_editTrainer_delete" mnemonicParsing="false" onAction="#btn_delete_pressed" prefHeight="40.0" prefWidth="162.0" text="Delete Trainer" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_f3_admin_editTrainer_edit" mnemonicParsing="false" onAction="#btn_edit_pressed" prefHeight="40.0" prefWidth="162.0" text="Edit Trainer" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_f3_admin_editTrainer_add" mnemonicParsing="false" onAction="#btn_add_pressed" prefHeight="40.0" prefWidth="162.0" text="Add Trainer" GridPane.columnIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="Radio_boxtxtf_f3_emp_Trainer_Male" mnemonicParsing="false" prefHeight="27.0" prefWidth="75.0" text="Male" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Radio_boxtxtf_f3_emp_Trainer_Female" mnemonicParsing="false" text="Female" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="lbl_trainerid3" prefHeight="27.0" prefWidth="204.0" text="Gender" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_n_trainer_age" prefHeight="27.0" prefWidth="204.0" text="Age" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtf_f3_emp_Trainer_Age" prefHeight="40.0" prefWidth="200.0" promptText="Age" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" prefHeight="65.0" prefWidth="1000.0" style="-fx-background-color: grey;" text="Add / Edit / delete Trainer">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView_f3_admin_editTrainer" layoutX="10.0" layoutY="493.0" onMouseClicked="#btn_row_pressed" prefHeight="284.0" prefWidth="980.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="tableColumn_admin_trainer_name" prefWidth="223.0" text="Trainer Name" />
+          <TableColumn fx:id="tableColumn_admin_trainer_id" prefWidth="135.0" text="ID" />
+            <TableColumn fx:id="tableColumn_admin_trainer_age" prefWidth="118.0" text="Age" />
+            <TableColumn fx:id="tableColumn_admin_trainer_phoneNo" prefWidth="169.0" text="Phone Number" />
+            <TableColumn fx:id="tableColumn_admin_trainer_email" prefWidth="198.0" text="Email" />
+            <TableColumn fx:id="tableColumn_admin_trainer_gender" prefWidth="136.0" text="Gender" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

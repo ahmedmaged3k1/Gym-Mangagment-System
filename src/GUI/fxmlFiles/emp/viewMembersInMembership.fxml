@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #bfbfbf;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controllers.emp.viewMembersInMembershipController">
+   <children>
+      <GridPane layoutX="21.0" layoutY="100.0" prefHeight="155.0" prefWidth="424.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" percentWidth="0.0" prefWidth="200.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" percentWidth="0.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="200.0" text="Membership Type" textAlignment="CENTER" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label prefHeight="27.0" prefWidth="235.0" text="Membership Name" visible="false" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <ChoiceBox fx:id="txtf_emp_viewMembers_InMembership_Name" prefWidth="150.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="txtf_emp_viewMembers_InMembership_Type" prefWidth="150.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" prefHeight="65.0" prefWidth="700.0" style="-fx-background-color: grey;" text="View  Members In a Membership">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_emp_viewMembers_InMembership_viewMembers" layoutX="496.0" layoutY="345.0" mnemonicParsing="false" onAction="#btn_ViewMembers_PRESSED" prefHeight="39.0" prefWidth="179.0" text="View Members ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableMemberData" layoutX="14.0" layoutY="195.0" prefHeight="379.0" prefWidth="460.0">
+        <columns>
+          <TableColumn fx:id="list_viewMembersInMembership_membersID" prefWidth="158.0" text="ID" />
+          <TableColumn fx:id="list_viewMembersInMembership_membersnames" prefWidth="301.0" text="Name" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

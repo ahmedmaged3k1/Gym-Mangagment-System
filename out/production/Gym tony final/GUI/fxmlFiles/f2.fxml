@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="851.0" prefWidth="1274.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="GUI.Controllers.f2Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="513.0" prefWidth="759.0" style="-fx-background-color: #20120f;" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane layoutX="624.0" layoutY="41.0" prefHeight="769.0" prefWidth="610.0" style="-fx-background-color: #7b0a0a;">
+               <children>
+                  <TextField fx:id="txtf_f2_userName" layoutX="283.0" layoutY="307.0" prefHeight="50.0" prefWidth="252.0" promptText="Write the user name here" />
+                  <Label layoutX="95.0" layoutY="407.0" mouseTransparent="true" prefHeight="61.0" prefWidth="171.0" text="Password " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtf_f2_userPassword" layoutX="282.0" layoutY="413.0" prefHeight="50.0" prefWidth="252.0" promptText="Password must consist of 6 charcaters" />
+                  <Button fx:id="btn_f2_login" contentDisplay="TOP" layoutX="95.0" layoutY="598.0" mnemonicParsing="false" onAction="#btn_login_PRESSED" prefHeight="50.0" prefWidth="457.0" style="-fx-background-color: ee2b2b;" text="Log In" textFill="WHITE" AnchorPane.bottomAnchor="121.0">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="95.0" layoutY="302.0" mouseTransparent="true" prefHeight="61.0" prefWidth="171.0" text="User name" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="244.0" layoutY="104.0" mouseTransparent="true" prefHeight="69.0" prefWidth="159.0" text="Sign In" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="47.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="769.0" fitWidth="561.0" layoutX="40.0" layoutY="41.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/f3c2e987d565469e64b52c3a9efe4ed0.jpg" />
+               </image>
+            </ImageView>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

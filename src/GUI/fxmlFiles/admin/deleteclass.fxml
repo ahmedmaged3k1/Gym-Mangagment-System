@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #bfbfbf;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controllers.admin.deleteClassController">
+   <children>
+      <GridPane layoutX="50.0" layoutY="120.0" prefHeight="332.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" percentWidth="0.0" prefWidth="200.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" percentWidth="0.0" prefWidth="200.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" percentWidth="0.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lbl_classid" prefHeight="27.0" prefWidth="201.0" text="Class ID" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="lbl_classname" prefHeight="27.0" prefWidth="204.0" text="Class Name" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="txtf_deleteClassid" prefHeight="46.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+            <TextField fx:id="txtf_deleteClassname" prefHeight="46.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn_delete_class" defaultButton="true" mnemonicParsing="false" onAction="#btn_delete_pressed" prefHeight="48.0" prefWidth="162.0" text="Delete Class" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" prefHeight="65.0" prefWidth="700.0" style="-fx-background-color: grey;" text="Delete class">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

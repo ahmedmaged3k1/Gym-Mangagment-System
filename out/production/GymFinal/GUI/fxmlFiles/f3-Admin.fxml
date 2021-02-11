@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="GUI.Controllers.admin.f3AdminController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="513.0" prefWidth="759.0" VBox.vgrow="ALWAYS">
+         <children>
+            <BorderPane prefHeight="900.0" prefWidth="1400.0">
+               <left>
+                  <VBox focusTraversable="true" prefHeight="889.0" prefWidth="376.0" style="-fx-background-color: #303031;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="10.0" prefWidth="308.0" style="-fx-background-color: #303039;" />
+                        <Button fx:id="btn_f3_addEditTrainer" mnemonicParsing="false" onAction="#btn_AddTrainer_PRESSED" prefHeight="70.0" prefWidth="379.0" style="-fx-background-color: #504949;" text="Add/edit/delete Trainer" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_f3_viewClass" mnemonicParsing="false" onAction="#btn_ViewClass_PRESSED" prefHeight="70.0" prefWidth="379.0" style="-fx-background-color: #504949;" text="View Class" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btn_f3_addClass" mnemonicParsing="false" onAction="#btn_AddNewClass_PRESSED" prefHeight="70.0" prefWidth="404.0" style="-fx-background-color: #504949;" text="Add New Class" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btn_f3_editClass" mnemonicParsing="false" onAction="#btn_EditClass_PRESSED" prefHeight="70.0" prefWidth="404.0" style="-fx-background-color: #504949;" text="Edit Class" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btn_f3_deleteClass" mnemonicParsing="false" onAction="#btn_deleteClass_PRESSED" prefHeight="70.0" prefWidth="392.0" style="-fx-background-color: #504949;" text="Delete Class" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <VBox prefHeight="20.0" prefWidth="350.0" style="-fx-background-color: #303039;" />
+                        <Button fx:id="btn_f3_assignTrainerToClass" mnemonicParsing="false" onAction="#btn_AssignTrainerToClass_PRESSED" prefHeight="70.0" prefWidth="454.0" style="-fx-background-color: #504949;" text="Assign Trainer to Class" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_f3_assignTrainerToMember" mnemonicParsing="false" onAction="#btn_AssignTrainerToMember_PRESSED" prefHeight="70.0" prefWidth="438.0" style="-fx-background-color: #504949;" text="Assign Trainer to Member" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <VBox prefHeight="20.0" prefWidth="350.0" style="-fx-background-color: #303039;" />
+                        <Button fx:id="btn_f3_viewMembers" mnemonicParsing="false" onAction="#btn_ViewAllMembersInfo_PRESSED" prefHeight="70.0" prefWidth="438.0" style="-fx-background-color: #504949;" text="View Members" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </left>
+               <top>
+                  <Label text="You are logged as Admin" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </top>
+            </BorderPane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

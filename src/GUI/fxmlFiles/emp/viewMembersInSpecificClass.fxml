@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #bfbfbf;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controllers.emp.viewMemberInClassController">
+
+   <children>
+      <Label alignment="CENTER" prefHeight="65.0" prefWidth="800.0" style="-fx-background-color: grey;" text="View  Members In all Classes">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="14.0" layoutY="76.0" prefHeight="461.0" prefWidth="780.0">
+         <children>
+            <TableView fx:id="classTable" prefHeight="495.0" prefWidth="199.0">
+              <columns>
+                  <TableColumn fx:id="table_viewallmembersinclasses_Class_id" editable="false" prefWidth="198.0" sortable="false" text="Class ID" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tableMembers" onSort="#initialize" prefHeight="461.0" prefWidth="583.0">
+              <columns>
+                <TableColumn fx:id="table_viewallmembersinclasses_trainee_id" editable="false" prefWidth="190.0" sortable="false" text="Trainee ID" />
+                <TableColumn fx:id="table_viewallmembersinclasses_trainee_name" editable="false" prefWidth="389.0" sortable="false" text="Trainee Name" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</Pane>
