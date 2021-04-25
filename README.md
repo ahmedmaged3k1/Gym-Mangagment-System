@@ -5,8 +5,7 @@ javafx
 mysql database
 gives you alot of functionalities like adding members , trainers , classes . Assigning members to classes and trainer to classes also , 
 Showing members information and editing them also same for trainers 
-
-#ScreenShots
+# ScreenShots
 
 https://user-images.githubusercontent.com/60134186/115994466-55256d80-a5d7-11eb-90d1-636b41ddc5a5.png
 https://user-images.githubusercontent.com/60134186/115994496-7f772b00-a5d7-11eb-82d4-2c8d60d9b0cb.png
